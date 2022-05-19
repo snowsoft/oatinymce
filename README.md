@@ -1,4 +1,4 @@
-Integrate CKEDITOR into laravel-admin
+Integrate Tinymce into laravel-admin
 ======
 
 This is a `laravel-admin` extension that integrates `Tinymce` into the `laravel-admin` form.
