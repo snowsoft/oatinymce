@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\CKEditor;
+namespace Encore\Tinymce;
 
 use Encore\Admin\Form\Field\Textarea;
 
@@ -31,7 +31,7 @@ class Editor extends Textarea
             'bold italic backcolor | alignleft aligncenter ' +
             'alignright alignjustify | bullist numlist outdent indent | ' +
             'removeformat | help',
-            content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
+             content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
           });
   
 EOT;
