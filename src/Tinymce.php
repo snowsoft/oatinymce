@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\CKEditor;
+namespace Encore\Tinymce;
 
 use Encore\Admin\Extension;
 
-class CKEditor extends Extension
+class Tinymce extends Extension
 {
-    public $name = 'ckeditor';
+    public $name = 'tinymce';
 
     public $views = __DIR__.'/../resources/views';
 
