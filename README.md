@@ -1,21 +1,19 @@
 Integrate CKEDITOR into laravel-admin
 ======
 
-This is a `laravel-admin` extension that integrates `CKEDITOR` into the `laravel-admin` form.
+This is a `laravel-admin` extension that integrates `Tinymce` into the `laravel-admin` form.
 
-## Screenshot
-
-![qq20180923-191508](https://user-images.githubusercontent.com/1479100/45928434-10944a00-bf76-11e8-918f-9566c7ba4c6b.png)
+ 
 
 ## Installation
 
 ```bash
-composer require snowsoft/ckeditor
+composer require snowsoft/tinymce
 ```
 
 Then
 ```bash
-php artisan vendor:publish --tag=laravel-admin-ckeditor
+php artisan vendor:publish --tag=laravel-admin-tinymce
 ```
 
 ## Configuration
@@ -25,7 +23,7 @@ In the `extensions` section of the `config/admin.php` file, add some configurati
 
     'extensions' => [
 
-        'ckeditor' => [
+        'tinymce' => [
         
             //Set to false if you want to disable this extension
             'enable' => true,
@@ -41,7 +39,7 @@ In the `extensions` section of the `config/admin.php` file, add some configurati
 The configuration of the editor can be found in [CKEditor Documentation](https://ckeditor.com/docs/ckeditor4/latest/guide/), such as configuration language and height.
 ```php
     'config' => [
-        'lang'   => 'zh-CN',
+        'lang'   => 'tr-TR',
         'height' => 500,
     ]
 ```
@@ -53,7 +51,7 @@ Use it in the form:
 $form->ckeditor('content');
 
 // Set config
-$form->ckeditor('content')->options(['lang' => 'fr', 'height' => 500]);
+$form->ckeditor('content')->options(['lang' => 'tr', 'height' => 500]);
 ```
 
  
