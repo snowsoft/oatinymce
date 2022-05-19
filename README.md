@@ -10,7 +10,7 @@ This is a `laravel-admin` extension that integrates `CKEDITOR` into the `laravel
 ## Installation
 
 ```bash
-composer require laravel-admin-ext/ckeditor
+composer require snowsoft/ckeditor
 ```
 
 Then
@@ -56,13 +56,7 @@ $form->ckeditor('content');
 $form->ckeditor('content')->options(['lang' => 'fr', 'height' => 500]);
 ```
 
-## Donate
-
-> Help keeping the project development going, by donating a little. Thanks in advance.
-
-[![PayPal Me](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/zousong)
-
-![-1](https://cloud.githubusercontent.com/assets/1479100/23287423/45c68202-fa78-11e6-8125-3e365101a313.jpg)
+ 
 
 License
 ------------
