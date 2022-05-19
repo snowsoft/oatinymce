@@ -1,14 +1,14 @@
 {
-    "name": "snowsoft/ckeditor",
-    "description": "Integrate CKEDITOR into laravel-admin",
+    "name": "snowsoft/tinymce",
+    "description": "Integrate tinymce into laravel-admin",
     "type": "library",
-    "keywords": ["laravel-admin", "extension", "editor", "CKEditor"],
-    "homepage": "https://github.com/laravel-admin-ext/ckeditor",
+    "keywords": ["laravel-admin", "extension", "editor", "tinymce"],
+    "homepage": "https://github.com/snowsoft/tinymce",
     "license": "MIT",
     "authors": [
         {
-            "name": "song",
-            "email": "zosong@126.com"
+            "name": "",
+            "email": ""
         }
     ],
     "require": {
@@ -20,13 +20,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Encore\\CKEditor\\": "src/"
+            "Encore\\Tinymce\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Encore\\CKEditor\\CKEditorServiceProvider"
+                "Encore\\Tinymce\\CKEditorServiceProvider"
             ]
 
         }
