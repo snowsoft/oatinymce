@@ -9,7 +9,7 @@ class Editor extends Textarea
     protected $view = 'laravel-admin-oatinymce::editor';
 
     protected static $js = [
-        'vendor/snowsoft/tinymce/tinymce6/tinymce.min.js',
+        'vendor/snowsoft/oatinymce/tinymce6/tinymce.min.js',
     ];
 
     public function render()
