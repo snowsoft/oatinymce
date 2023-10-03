@@ -6,7 +6,7 @@ use OpenAdmin\Admin\Extension;
 
 class Tinymce extends Extension
 {
-    public $name = 'oatinymce';
+    public $name = 'tinymce';
 
     public $views = __DIR__.'/../resources/views';
 
