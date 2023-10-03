@@ -18,18 +18,18 @@ class TinymceServiceProvider extends ServiceProvider
         }
 
         if ($views = $extension->views()) {
-            $this->loadViewsFrom($views, 'laravel-admin-oatinymce');
+            $this->loadViewsFrom($views, 'laravel-admin-tinymce');
         }
 
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
             $this->publishes(
-                [$assets => public_path('vendor/snowsoft/oatinymce')],
-                'laravel-admin-oatinymce'
+                [$assets => public_path('vendor/snowsoft/tinymce')],
+                'laravel-admin-tinymce'
             );
         }
 
         Admin::booting(function () {
-            Form::extend('oatinymce', Editor::class);
+            Form::extend('tinymce', Editor::class);
         });
     }
 }
