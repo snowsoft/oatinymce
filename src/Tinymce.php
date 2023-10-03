@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Tinymce;
+namespace OpenAdmin\Tinymce;
 
-use Encore\Admin\Extension;
+use OpenAdmin\Admin\Extension;
 
 class Tinymce extends Extension
 {
-    public $name = 'tinymce';
+    public $name = 'oatinymce';
 
     public $views = __DIR__.'/../resources/views';
 
