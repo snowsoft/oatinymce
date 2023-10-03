@@ -8,7 +8,7 @@ This is a `laravel-admin` extension that integrates `Tinymce` into the `laravel-
 ## Installation
 
 ```bash
-composer require snowsoft/tinymce
+composer require snowsoft/oatinymce
 ```
 
 Then
