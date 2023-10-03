@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Tinymce;
+namespace OpenAdmin\Tinymce;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Form;
+use OpenAdmin\Admin\Admin;
+use OpenAdmin\Admin\Form;
 use Illuminate\Support\ServiceProvider;
 
 class TinymceServiceProvider extends ServiceProvider
@@ -18,18 +18,18 @@ class TinymceServiceProvider extends ServiceProvider
         }
 
         if ($views = $extension->views()) {
-            $this->loadViewsFrom($views, 'laravel-admin-tinymce');
+            $this->loadViewsFrom($views, 'laravel-admin-oatinymce');
         }
 
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
             $this->publishes(
-                [$assets => public_path('vendor/snowsoft/tinymce')],
-                'laravel-admin-tinymce'
+                [$assets => public_path('vendor/snowsoft/oatinymce')],
+                'laravel-admin-oatinymce'
             );
         }
 
         Admin::booting(function () {
-            Form::extend('tinymce', Editor::class);
+            Form::extend('oatinymce', Editor::class);
         });
     }
 }
