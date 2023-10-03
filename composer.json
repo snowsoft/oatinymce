@@ -20,13 +20,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Encore\\Tinymce\\": "src/"
+            "OpenAdmin\\Tinymce\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Encore\\Tinymce\\TinymceServiceProvider"
+                "OpenAdmin\\Tinymce\\TinymceServiceProvider"
             ]
 
         }
