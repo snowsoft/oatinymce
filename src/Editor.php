@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Tinymce;
+namespace OpenAdmin\Tinymce;
 
-use Encore\Admin\Form\Field\Textarea;
+use OpenAdmin\Admin\Form\Field\Textarea;
 
 class Editor extends Textarea
 {
-    protected $view = 'laravel-admin-tinymce::editor';
+    protected $view = 'laravel-admin-oatinymce::editor';
 
     protected static $js = [
         'vendor/snowsoft/tinymce/tinymce6/tinymce.min.js',
